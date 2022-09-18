@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+.header {
+  background-color: burlywood;
+  height: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_text {
+  flex: 1;
+  color: chocolate;
+  text-align: center;
+  font-size: 50pt;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box {
+  padding: 5px;
+  margin: 10px;
+  flex-basis: 10%;
+  text-align: center;
+}
+.text {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.bn {
+  border: 3px solid #68dea0;
+  background-color: #68dea0;
+  font-size: 25px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 100px;
+}
+.bn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bn-remove {
+  background-color: #d2001a;
+  border: 3px solid #d2001a;
+}
+
+.bn-emptey {
+  border: 3px solid rgba(66, 3, 44, 0.5);
+  background-color: rgba(66, 3, 44, 0.5);
+}
+
+img:hover {
+  transform: scale(1.1);
+  border: 1px solid orange;
+}
+
+.results {
+  text-align: center;
+  border: 1px solid orange;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  background-image: linear-gradient(#fdeedc, #f1a661);
+  margin-bottom: 50px;
+}
+
+.results h1 {
+  overflow-wrap: break-word;
+}
+
+.backgroundSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.backgroundSection h1 {
+  text-align: center;
+  font-size: 6rem;
+  z-index: 1;
+  font-family: "Cookie", cursive;
+  background: white;
+  padding: 50px;
+  margin: 15px;
+  opacity: 0.6;
+  border-radius: 75%;
+  position: absolute;
+  top: 50px;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.button {
+  z-index: 1;
+  border: 5px solid black;
+  border-radius: 75%;
+  padding: 25px;
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  cursor: pointer;
+  font-family: "Cookie", cursive;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+}
+a:hover {
+  background: grey;
+}

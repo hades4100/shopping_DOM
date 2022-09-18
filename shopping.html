@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>shopping</title>
+  </head>
+  <body>
+    <!-- this is the header -->
+    <div class="header">
+      <div class="header_text">my store</div>
+    </div>
+
+    <!--  this is the gallery part -->
+    <div class="section">
+      <div class="box">
+        <img src="lettuce.jpg" style="width: 300px; height: 300px" />
+        <p class="text">Lettuce<br />Price: 1$ | Free Shipping</p>
+        <button class="bn" onclick="addto1();discount()">Add to cart</button>
+        <button class="bn bn-remove" onclick="remove1();discount()">Remove from basket</button>
+      </div>
+      <div class="box">
+        <img src="tomato.jpg" style="width: 300px; height: 300px" />
+        <p class="text">Tomato<br />Price: 1$ | Free Shipping</p>
+        <button class="bn" onclick="addto1();discount()">Add to cart</button>
+        <button class="bn bn-remove" onclick="remove1();discount()">Remove from basket</button>
+      </div>
+      <div class="box">
+        <img src="onion.jpg" style="width: 300px; height: 300px" />
+        <p class="text">Onion<br />Price: 2$ | Free Shipping</p>
+        <button class="bn" onclick="addto2();discount()">Add to cart</button>
+        <button class="bn bn-remove" onclick="remove2();discount()">Remove from basket</button>
+      </div>
+      <div class="box">
+        <img src="pepper.jpg" style="width: 300px; height: 300px" />
+        <p class="text">Bell Pepper<br />Price: 2$ | Free Shipping</p>
+        <button class="bn" onclick="addto2();discount()">Add to cart</button>
+        <button class="bn bn-remove" onclick="remove2();discount()">Remove from basket</button>
+      </div>
+    </div>
+
+    <!-- this is the results bar -->
+
+    <div class="results">
+      <h1>total sum so far: <span id="thesum"></span> $</h1>
+      <h1>discount: 10%</h1>
+      <h1><u>price after discount: </u><span id="discount"></span> $</h1>
+      <output name="result" for="thesum"></output>
+      <button class="bn bn-emptey">Emptey the cart</button>
+    </div>
+
+    <script type="text/javascript" src="shopping.js"></script>
+  </body>
+</html>
